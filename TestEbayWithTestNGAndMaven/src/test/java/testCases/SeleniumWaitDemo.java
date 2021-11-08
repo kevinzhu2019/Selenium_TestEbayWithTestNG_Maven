@@ -18,7 +18,7 @@ public class SeleniumWaitDemo {
 	
 	public static void seleniumWait() {
 		
-		String projectPath = System.getProperty("user.dir");
+//		String projectPath = System.getProperty("user.dir");
 		System.setProperty("webdriver.chrome.driver", "C:\\selenium_java\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
