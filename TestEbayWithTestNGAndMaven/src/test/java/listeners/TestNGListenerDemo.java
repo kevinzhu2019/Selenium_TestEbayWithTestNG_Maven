@@ -18,7 +18,7 @@ public class TestNGListenerDemo {
 	@Test
 	public void test2() {
 		System.out.println("I am inside test 2, here is the real case");
-		String path = System.getProperty("user.dir");
+//		String path = System.getProperty("user.dir");
 		System.setProperty("webdriver.chrome.driver", "C:\\selenium_java\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://google.com");
