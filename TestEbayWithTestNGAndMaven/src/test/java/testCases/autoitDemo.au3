@@ -1,0 +1,5 @@
+ControlFocus("Open", "", "Edit1")
+Sleep(2000)
+ControlSetText("Open", "", "Edit1", "C:\Users\kevin\Downloads\text1.txt")
+Sleep(2000)
+ControlClick("Open", "", "Button1")
