@@ -1,6 +1,7 @@
 package testCases;
 
 import java.time.Duration;
+import java.util.Arrays;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

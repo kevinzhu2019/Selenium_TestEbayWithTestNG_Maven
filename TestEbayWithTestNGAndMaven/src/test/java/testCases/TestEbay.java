@@ -1,10 +1,9 @@
 package testCases;
 
-import static org.testng.Assert.assertEquals;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -45,8 +44,9 @@ public class TestEbay {
 		objMainPage = new MainPage(driver);
 		objMainPage.gotoSearchResultPage(searchingKeyword);
 		objSearchResult = new SearchResult(driver);
-		assertEquals(objSearchResult.verifySearchBox(), searchingKeyword);
-		assertEquals(objSearchResult.verifyResult(), searchingKeyword);
+		Assert.assertEquals(objSearchResult.verifySearchBox(), searchingKeyword);
+		Assert.assertEquals(objSearchResult.verifyResult(), searchingKeyword);
+		System.out.println("test test test");
 	}
 	
 	@AfterTest

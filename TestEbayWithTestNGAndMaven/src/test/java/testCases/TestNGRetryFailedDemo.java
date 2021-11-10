@@ -15,7 +15,6 @@ public class TestNGRetryFailedDemo {
 	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void test2() {
 		System.out.println("I am inside test 2");
-//		int i = 1/0;
 	}
 	
 	@Test
